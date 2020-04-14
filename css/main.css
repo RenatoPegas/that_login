@@ -1,3 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css');
+
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    display: flex;
+    vertical-align: middle;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#st-login{
+    background-image: url(../img/bg-horizon.jpg);
+    background-color: grey;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.form-container{
+    background-color: #3b3b3b;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    opacity: .9;
+    margin: 1em 0;
+    -webkit-box-shadow: 7px 9px 7px -7px rgba(0,0,0,1);
+    -moz-box-shadow: 7px 9px 7px -7px rgba(0,0,0,1);
+    box-shadow: 7px 9px 7px -7px rgba(0,0,0,1);
+    width: 90%;
+}
+
+#sign-up{
+    color: #949494;
+    padding: 2em;
+    /* width: 50%; */
+}
+
+#sign-up p{
+    padding: 2em 0;
+}
+
+#sign-up a{
+    border: 1px solid #949494;
+    border-radius: 5px;
+    color: #949494;
+    padding: .5em 3em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+#sign-up  a:hover{
+    background-color: #949494;;
+    color:black;
+}
+
+#login-section{
+    background-color: #ececec;
+    border-radius: 5px;
+    color: black;
+    padding: 2em 1.5em;
+    position: absolute;
+    top: 95%;
+    height: 120%;
+     -webkit-box-shadow: 7px 9px 7px -7px rgba(0,0,0,1);
+    -moz-box-shadow: 7px 9px 7px -7px rgba(0,0,0,1);
+    box-shadow: 7px 9px 7px -7px rgba(0,0,0,1);
+}
+
+#login-section h2{
+    color: #ed8777;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+form .line{
+    padding: .5em 0;
+    border-bottom: 1px solid grey;
+}
+
+form .line input{
+    background-color: #ececec;
+    border: none;
+    color: #949494;
+    font-size: 1em;
+    height: 35px;
+    margin-bottom: .5em;
+    width: 90%;
+}
+
+form .line input:active{
+    border: 1px solid grey;
+}
+
+form .line i{
+    color: grey;
+}
+
+.buttons{
+    margin: 2em 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#forgot{
+    border: none;
+    border-radius: 5px;
+    color: #949494;
+    transition: .3s;
+    padding: 1em;
+}
+
+#forgot:hover{
+    color: black;
+}
+
+#login{
+    background-color: #ed8777;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    transition: .3s;
+    padding: 1em;
+}
+
+#login:hover{
+    background-color: #b1695e;
+}
+
+@media screen and (min-width: 1200px){
+
+    body{
+        align-items: center;
+    }
+
+    .form-container{
+        flex-direction: row;
+        height: 300px;
+        width: 50%;
+    }
+
+    #sign-up{
+    width: 50%;
+    }
+
+    #login-section{
+        width: 50%;
+        top: -10%;
+        right: 2em;
+        padding: 4em 1.5em;
+    }
+
+    .buttons{
+        margin: 3em 0;
+    }
+
+    #login{
+        padding: 1em 5em;
+    }
+
+
 }
